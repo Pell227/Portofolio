@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Felisia's Landpage</title>
-    <link rel="stylesheet" src="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
@@ -12,16 +12,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
-      <a href="#home" class="logo">Felisia <span>Felisia</span></a>
-      <i class="fa-solid fa-house"></i>
+      <a href="#home" class="logo"
+        ><i class="fa-solid fa-house"></i> <span>FELISIA</span></a
+      >
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#education">Education</a>
-        <a href="#portofolio">Portofolio</a>
+        <a href="#portfolio">Portofolio</a>
         <a href="#language">Language</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -31,17 +37,111 @@
       <div class="home-section">
         <h1><span>Felisia</span> Portofolio</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit
-          asperiores at nihil facilis! Dolorum aspernatur, rem voluptate, porro
-          quasi nostrum, quae quod ipsum dicta nemo asperiores repellendus sint!
-          Ad. Odio accusantium unde culpa quia? Minima nulla labore odit natus
-          fuga.
+          Mahasiswa Fakultas Teknologi Informasi Universitas Tarumanagara
+          jurusan Teknik Informatika. Memiliki pengalaman mengembangkan proyek
+          akademik berbasis web dan implementasi metode numerik menggunakan
+          html, css, Java, Python, Laravel, dan MySQL. Memiliki kemampuan
+          analitis, komunikasi yang baik, serta saat ini sedang menjadi assisten
+          dosen Fakultas Teknologi Informasi.
         </p>
+        <div class="btn-side">
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="main-img">
+        <img src="assets/plain.jpg" alt="img" />
       </div>
     </section>
 
     <section class="education" id="education">
-      <div class="education-section"></div>
+      <h1 class="Headedu">Education</h1>
+      <div class="timeline">
+        <div class="c l">
+          <div class="content">
+            <h3>Universal School</h3>
+            <div class="univ"><img src="assets/univ.png" /></div>
+            <h2>2013-2022</h2>
+            <p>
+              Universal School Denpasar adalah sekolah nasional plus yang
+              menghadirkan pendidikan berkualitas dengan pendekatan global dan
+              berakar pada nilai karakter. Menyelenggarakan jenjang TK, SD, dan
+              SMP, kami berkomitmen menciptakan lingkungan belajar yang aman,
+              inklusif, dan inspiratif. Dengan program unggulan pembelajaran
+              Bahasa Mandarin setiap hari, siswa dibekali kemampuan bahasa
+              internasional sejak dini.
+            </p>
+          </div>
+        </div>
+        <div class="c r">
+          <div class="content">
+            <h3>SMAS K SANTO YOSEPH DENPASAR</h3>
+            <div class="sanjose"><img src="assets/sanjose.png" /></div>
+            <h2>2022-2025</h2>
+            <p>
+              SMAS K Santo Yoseph Denpasar merupakan sekolah menengah atas
+              swasta berakreditasi A di Denpasar, Bali, yang berkomitmen pada
+              keunggulan akademik, pembentukan karakter, dan kedisiplinan.
+              Memegang visi "Berkualitas dalam Mengembangkan Insan yang Cerdas,
+              Mandiri, dan Berkarakter", sekolah ini berhasil meraih peringkat
+              pertama SMA terbaik di Provinsi Bali berdasarkan nilai UTBK tahun
+              2022.Jurusan IPS dalam kurikum merdeka dengan mata pelajaran
+              minat:
+            </p>
+            <ul>
+              <li>Ekonomi</li>
+              <li>Sosiologi</li>
+              <li>Informatika</li>
+              <li>Bahasa Jepang</li>
+            </ul>
+          </div>
+        </div>
+        <div class="c l">
+          <div class="content">
+            <h2>Universitas Tarumanagara</h2>
+            <div class="untar"><img src="assets/untar.png" /></div>
+            <h2>August 2025-Hingga saat ini</h2>
+            <p>Fakultas Teknologi Informasi,Jurusan Teknik Informatika</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Portfolio" id="portfolio">
+      <h2 class="port">Portofolio</h2>
+      <div class="card"></div>
+    </section>
+
+    <section class="language" id="language">
+      <h2 class="langu">Languages</h2>
+
+      <div class="langsec">
+        <div class="cardlistb">
+          <h2>Bahasa</h2>
+          <div class="bahasa">
+            <ul>
+              <li>Bahasa Indonesia</li>
+              <li>Bahasa Mandarin</li>
+              <li>Bahasa Inggris</li>
+              <li>Bahasa Jepang</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cardlist">
+          <h2>Programming Language</h2>
+          <img src="assets/weblang.png" />
+        </div>
+
+        <div class="cardlist">
+          <h2>Database</h2>
+          <img src="assets/database.png" />
+        </div>
+
+        <div class="cardlist">
+          <h2>Framework</h2>
+          <img src="assets/framework.png" />
+        </div>
+      </div>
     </section>
 
     <main>
@@ -52,10 +152,12 @@
               <a href="#"><i class="fab fa-youtube"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/felisia-270207rl/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-x-twitter"></i></a>
             </li>
             <li>
               <a href="https://github.com/Pell227"
@@ -67,10 +169,10 @@
       </aside>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>&copy; Felisia</p>
     </footer>
 
-    <script srx="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
