@@ -6,26 +6,34 @@
     <title>Felisia's Landpage</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
       integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header class="header">
-      <a href="#home" class="logo"
-        ><i class="fa-solid fa-house"></i> <span>FELISIA</span></a
-      >
+      <a href="#home" class="logo"> <span>FELISIA</span> </a>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
+      <button
+        class="menu-btn"
+        id="menu-btn"
+        aria-label="Buka menu"
+        aria-expanded="false"
+      >
+        <span> </span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
         <a href="#education">Education</a>
         <a href="#portfolio">Portofolio</a>
         <a href="#language">Language</a>
@@ -35,7 +43,7 @@
 
     <section class="home" id="home">
       <div class="home-section">
-        <h1><span>Felisia</span> Portofolio</h1>
+        <h1><span>Felisia's</span> Portofolio</h1>
         <p>
           Mahasiswa Fakultas Teknologi Informasi Universitas Tarumanagara
           jurusan Teknik Informatika. Memiliki pengalaman mengembangkan proyek
@@ -77,7 +85,7 @@
 
         <div class="c r">
           <div class="content">
-            <h2>SMAS K SANTO YOSEPH DENPASAR</h2>
+            <h2>SMA K Santo Yoseph Denpasar</h2>
             <div class="sanjose"><img src="assets/sanjose.png" /></div>
             <h3 class="year">2022-2025</h3>
             <p>
@@ -115,14 +123,17 @@
       <div class="portsec">
         <div class="card">
           <h2>Point Of Sales Aplikasi kasir</h2>
+          <img src="assets/backend.png" />
           <p>
             Project tugas untuk UTS dan UAS dengan dua bahasa yang berbeda
-            javascript serta php
+            javascript serta php, dengan membuat sistem kasir yaitu Point of
+            Sales
           </p>
         </div>
 
         <div class="card">
           <h2>Discord Game Bot</h2>
+          <img src="assets/bot.png" />
           <p>
             Bot untuk server discord yang dirancang sebagai bot untuk menghibur
             member server
@@ -169,7 +180,9 @@
         <div class="sosmed">
           <ul>
             <li>
-              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.instagram.com/felisiakhe/"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/felisia-270207rl/"
@@ -189,8 +202,32 @@
       </aside>
     </main>
 
-    <footer class="footer">
-      <p>Copyright &copy; Felisia</p>
+    <footer class="footer" id="contact">
+      <div class="contact">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/felisiakhe/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/felisia-270207rl/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:felisiakhe@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/Pell227"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p>Copyright &copy; 2025 Felisia || 535250166</p>
     </footer>
 
     <script src="app.js"></script>

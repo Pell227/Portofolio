@@ -27,6 +27,11 @@ html {
   font-family: "Poppins";
 }
 
+.btn:hover {
+  background: #758ff1;
+  box-shadow: 0 0 25px #758ff1;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -42,9 +47,10 @@ html {
 }
 
 .header span {
-  font-size: 15px;
+  font-size: 25px;
   gap: 15px;
   color: white;
+  font-family: "poppins";
 }
 
 .header i {
@@ -170,6 +176,14 @@ body {
   background-color: white;
   position: relative;
   border-radius: 6px;
+  box-shadow: 0 0 10px #737272;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.content:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #737272;
 }
 
 .content h2 {
@@ -272,6 +286,7 @@ body {
   display: grid;
   border: 2px solid white;
   border-radius: 12px;
+  box-shadow: 0 0 20px #737272;
   padding: 2rem;
   background-color: white;
   margin-bottom: 0;
@@ -279,6 +294,18 @@ body {
   min-width: 0;
   max-width: 100%;
   flex: 1 1 320px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #737272;
+}
+
+.card img {
+  width: 400px;
+  margin-bottom: 1em;
 }
 
 .card h2 {
@@ -286,7 +313,7 @@ body {
   font-size: 1.5rem;
   color: #042180;
   font-family: "Poppins", sans-serif;
-  text-align: left;
+  text-align: center;
 }
 
 .card p {
@@ -295,6 +322,7 @@ body {
   line-height: 1.6;
   color: #042180;
   font-family: Helvetica, sans-serif;
+  text-align: justify;
 }
 
 .language {
@@ -320,12 +348,20 @@ body {
   justify-items: center;
   align-items: center;
   border: 2px solid white;
+  box-shadow: 0 0 20px #737272;
   border-radius: 12px;
   padding: 2rem;
   background-color: white;
   margin-bottom: 0;
   max-width: 150%;
   flex: 1 1 120%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.cardlistb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #737272;
 }
 
 .cardlistb h2 {
@@ -340,11 +376,19 @@ body {
   border: 2px solid white;
   border-radius: 12px;
   padding: 2rem;
+  box-shadow: 0 0 20px #737272;
   background-color: white;
   margin-bottom: 0;
   width: auto;
   min-width: 0;
   max-width: 100%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.cardlist:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #737272;
 }
 
 .cardlist h2 {
@@ -431,7 +475,60 @@ main aside.sosmed-bar .sosmed li a:hover {
   background-color: #042180;
 }
 
-/*media*/
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: 0.3s ease;
+}
+
+.conact a:hover {
+  color: #758ff1;
+}
+
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-btn span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.menu-btn.open span:nth-child(1) {
+  transform: translateY(9.5px) rotate(45deg);
+}
+
+.menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open span:nth-child(3) {
+  transform: translateY(-9.5px) rotate(-45deg);
+}
+
 @media screen and (max-width: 600px) {
   .timeline::after {
     left: 31px;
@@ -469,5 +566,41 @@ main aside.sosmed-bar .sosmed li a:hover {
     max-width: 300px;
     height: auto;
     aspect-ratio: 1 / 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1.2rem 5%;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: 0.5rem 5% 1rem;
+    background: #042180;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  section {
+    padding: 8rem 5% 4rem;
   }
 }
